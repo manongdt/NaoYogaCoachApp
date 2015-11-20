@@ -12,6 +12,7 @@ import de.robotik.nao.communicator.core.SectionsPagerAdapter;
 import de.robotik.nao.communicator.core.revisions.ServerRevision;
 import de.robotik.nao.communicator.core.revisions.ServerRevisionChecker;
 import de.robotik.nao.communicator.core.sections.Section;
+import de.robotik.nao.communicator.core.sections.SectionAlarm;
 import de.robotik.nao.communicator.core.sections.SectionConnect;
 import de.robotik.nao.communicator.core.sections.SectionFunctions;
 import de.robotik.nao.communicator.core.sections.SectionLed;
@@ -171,7 +172,8 @@ public class MainActivity extends FragmentActivity implements
 			mSections.add( new SectionSpeech("Speech") );
 			mSections.add( new SectionFunctions("Functions") );
 			mSections.add( new SectionLed("LEDs") );
-			mSections.add( new SectionProgramming("Programming") );			
+			mSections.add( new SectionProgramming("Programming") );	
+			mSections.add(new SectionAlarm("Alarm Clock"));
 		}
 	}
 
