@@ -29,7 +29,8 @@
            android:layout_height="wrap_content"
            android:layout_gravity="bottom"
            android:background="@color/blue"
-           android:text="@string/btnOK" />
+           android:text="@string/btnOK"
+           android:textColor="@color/white_text" />
  
    	</LinearLayout>
 
