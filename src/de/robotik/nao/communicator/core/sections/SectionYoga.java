@@ -5,13 +5,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.ImageButton;
 import de.robotik.nao.communicator.R;
 import de.robotik.nao.communicator.core.RemoteNAO;
 import de.robotik.nao.communicator.network.data.NAOCommands;
 
 public class SectionYoga extends Section implements OnClickListener{
-ImageButton btnYoga;
+private Button btnYoga;
 
 	public SectionYoga(String nomPage) {
 		// TODO Auto-generated constructor stub
@@ -28,36 +29,23 @@ ImageButton btnYoga;
 		View rootView = inflater.inflate(R.layout.page_yoga, container, false);
 
 		//get view ................................................................................
-		btnYoga = (ImageButton) findViewById(R.id.btnYoga);
-		
+		btnYoga = (Button) findViewById(R.id.btnYoga);
 		// set listener
-	
-		btnYoga.setOnClickListener(new View.OnClickListener() {
-		    @Override
-		    public void onClick(View v) {
-		        playProgram();
-		    }
-		});
-		
-		
-		
+		btnYoga.setOnClickListener(this);
 		return rootView;
 	}
-	
-	
-private void playProgram(){
-		
-			// send command
-		RemoteNAO.sendCommand(NAOCommands.PLAY_YOGA);
-		
-	}
-
-
 
 	@Override
 	public void onClick(View v) {
-		// TODO Auto-generated method stub
-		
+		if (v.getId()==R.id.btnYoga){
+			playProgram();
+		}
 	}
+	
 
+	private void playProgram(){
+	// send command
+	RemoteNAO.sendCommand(NAOCommands.PLAY_YOGA);		
+	}
+	
 }

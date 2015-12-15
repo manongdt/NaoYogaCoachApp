@@ -143,8 +143,7 @@ public class SectionProgramming extends Section implements
 			aItem.setPosition( divProgramming.getChildCount() );
 		}
 	}
-	
-	/**
+	 /**
 	 * Generates program data and sends play command
 	 */
 	private void playProgram(){

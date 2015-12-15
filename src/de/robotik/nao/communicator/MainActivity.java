@@ -170,12 +170,13 @@ public class MainActivity extends FragmentActivity implements
 			mSections.add( new SectionConnect("Connect") );
 			mSections.add( new SectionHotspot("Hotspot") );
 			mSections.add( new SectionStatus("NAO Status") );
+			mSections.add( new SectionAlarm("Alarm Clock") );
+			mSections.add( new SectionYoga("Let's Go Yoga!") );
 			mSections.add( new SectionSpeech("Speech") );
 			mSections.add( new SectionFunctions("Functions") );
 			mSections.add( new SectionLed("LEDs") );
 			mSections.add( new SectionProgramming("Programming") );	
-			mSections.add( new SectionAlarm("Alarm Clock") );
-			mSections.add( new SectionYoga("Let's Go Yoga!") );
+			
 		}
 	}
 
