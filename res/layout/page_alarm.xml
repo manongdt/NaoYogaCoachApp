@@ -10,18 +10,22 @@
         android:gravity="center_vertical|center_horizontal"
         android:orientation="vertical" >
 
-        <DatePicker
-            android:id="@+id/datePickerAlarm"
-            android:layout_width="219dp"
-            android:layout_height="98dp"
-            android:datePickerMode="calendar"
-            android:dayOfWeekBackground="@color/inactive_text" />
-
-<<<<<<< Updated upstream
        <TimePicker
            android:id="@+id/timePickerAlarm"
            android:layout_width="fill_parent"
            android:layout_height="wrap_content" />
+
+       <Button
+           android:id="@+id/musicButton"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Choisir musique" />
+
+       <TextView
+           android:id="@+id/musicText"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Pas de musique" />
 
        <Button
            android:id="@+id/okButton"
@@ -31,37 +35,13 @@
            android:background="@color/blue"
            android:text="@string/btnOK"
            android:textColor="@color/white_text" />
-=======
-        <TimePicker
-            android:id="@+id/timePickerAlarm"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content" />
+        
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content" >
 
-            <Button
-                android:id="@+id/musicButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Choisir musique" />
-
-            <TextView
-                android:id="@+id/musicText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Pas de musique" />
-
         </LinearLayout>
-
-        <Button
-            android:id="@+id/okButton"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/blue"
-            android:text="@string/btnOK" />
->>>>>>> Stashed changes
  
    	</LinearLayout>
 
