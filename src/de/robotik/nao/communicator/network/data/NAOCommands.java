@@ -46,6 +46,8 @@ public enum NAOCommands {
 	
 	PLAY_PROGRAM,
 	STOP_PROGRAM,
-	PROGRAM_STATUS;
+	PROGRAM_STATUS,
+	
+	ALARM_SETTING;
 	
 }

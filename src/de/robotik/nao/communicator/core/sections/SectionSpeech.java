@@ -87,7 +87,9 @@ public class SectionSpeech extends Section implements
 	private DataResponsePackage lastResponsePackage;
 	private SharedPreferences mSettings;
 	
-	public SectionSpeech() {}
+	public SectionSpeech() {
+		super();
+	}
 	
 	public SectionSpeech(String title){
 		super(title);
