@@ -19,6 +19,7 @@ import de.robotik.nao.communicator.core.sections.SectionLed;
 import de.robotik.nao.communicator.core.sections.SectionProgramming;
 import de.robotik.nao.communicator.core.sections.SectionSpeech;
 import de.robotik.nao.communicator.core.sections.SectionStatus;
+import de.robotik.nao.communicator.core.sections.SectionYoga;
 import de.robotik.nao.communicator.core.sections.SectionHotspot;
 import de.robotik.nao.communicator.core.widgets.RemoteDevice;
 import de.robotik.nao.communicator.network.NetworkDataRecievedListenerNotifier;
@@ -173,7 +174,8 @@ public class MainActivity extends FragmentActivity implements
 			mSections.add( new SectionFunctions("Functions") );
 			mSections.add( new SectionLed("LEDs") );
 			mSections.add( new SectionProgramming("Programming") );	
-			mSections.add(new SectionAlarm("Alarm Clock"));
+			mSections.add( new SectionAlarm("Alarm Clock") );
+			mSections.add( new SectionYoga("Let's Go Yoga !") );
 		}
 	}
 
