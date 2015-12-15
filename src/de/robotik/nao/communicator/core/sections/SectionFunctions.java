@@ -74,7 +74,7 @@ public class SectionFunctions extends Section implements
 		(btnDanceCaravanPalace = (Button) findViewById(R.id.btnDanceCaravanPalace)).setOnClickListener(this);
 		(btnDanceEvolutionOfDance = (Button) findViewById(R.id.btnDanceEvolutionOfDance)).setOnClickListener(this);
 		(btnDanceEyeOfTheTiger = (Button) findViewById(R.id.btnDanceEyeOfTheTiger)).setOnClickListener(this);
-		(btnDanceGangnameStyle = (Button) findViewById(R.id.btnDanceGangnameStyle)).setOnClickListener(this);
+		(btnDanceGangnameStyle = (Button) findViewById(R.id.imgNao)).setOnClickListener(this);
 		(btnDanceThaiChi = (Button) findViewById(R.id.btnDanceThaiChi)).setOnClickListener(this);
 		(btnDanceVangelisDance = (Button) findViewById(R.id.btnDanceVangelisDance)).setOnClickListener(this);
 		

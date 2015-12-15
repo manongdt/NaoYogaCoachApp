@@ -48,6 +48,7 @@ public enum NAOCommands {
 	STOP_PROGRAM,
 	PROGRAM_STATUS,
 	
-	ALARM_SETTING;
+	ALARM_SETTING,
+	PLAY_YOGA;
 	
 }

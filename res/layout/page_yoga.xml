@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/imgNao"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
@@ -7,15 +8,16 @@
     <ImageView
         android:id="@+id/imageNao"
         android:layout_width="210dp"
-        android:layout_height="274dp"
+        android:layout_height="400dp"
         android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_weight="0.36"
         android:src="@drawable/ic_nao_yoga" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/btnYoga"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Let&apos;s go Yoga!" />
+        android:text="@string/btnyoga" />
 
 </LinearLayout>

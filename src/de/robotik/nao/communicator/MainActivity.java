@@ -70,7 +70,7 @@ public class MainActivity extends FragmentActivity implements
 	private List<NetworkDataRecievedListener> dataRecievedListener = new ArrayList<NetworkDataRecievedListener>();
 	private List<OnActivityResultListener> activityResultListener = new ArrayList<OnActivityResultListener>();
 	
-	private String mTitle = "[offline] NAO Communicator";
+	private String mTitle = "[offline] Nao Yoga Coach App";
 	private SectionsPagerAdapter mSectionsPagerAdapter;
 	private ViewPager mViewPager;
 	private DrawerLayout mDrawerLayout;
@@ -175,7 +175,7 @@ public class MainActivity extends FragmentActivity implements
 			mSections.add( new SectionLed("LEDs") );
 			mSections.add( new SectionProgramming("Programming") );	
 			mSections.add( new SectionAlarm("Alarm Clock") );
-			mSections.add( new SectionYoga("Let's Go Yoga !") );
+			mSections.add( new SectionYoga("Let's Go Yoga!") );
 		}
 	}
 
@@ -369,7 +369,7 @@ public class MainActivity extends FragmentActivity implements
 	@Override
 	public void onNetworkDataRecieved(DataResponsePackage data) {
 		if( data.request.command == NAOCommands.SYS_DISCONNECT && data.requestSuccessfull ){
-			updateTitle( "[offline] NAO Communicator" );
+			updateTitle( "[offline] Nao Yoga Coach App" );
 		} else {
 			updateTitle( "[" + data.batteryLevel + "%] " + data.naoName );
 		}
