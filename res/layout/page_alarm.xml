@@ -19,7 +19,9 @@
            android:id="@+id/musicButton"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
-           android:text="Choisir musique" />
+           android:background="@color/blue"
+           android:text="Choisir musique"
+           android:textColor="@color/white_text" />
 
        <TextView
            android:id="@+id/musicText"

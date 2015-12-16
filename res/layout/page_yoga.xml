@@ -15,9 +15,14 @@
 
     <Button
         android:id="@+id/btnYoga"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="@string/btnyoga" />
+        android:background="@color/blue"
+        android:gravity="center_vertical|center_horizontal|fill_horizontal"
+        android:text="@string/btnyoga"
+        android:textAlignment="center"
+        android:textColor="@color/white_text"
+        android:textColorLink="@color/blue" />
 
 </LinearLayout>
